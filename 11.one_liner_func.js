@@ -10,7 +10,9 @@ continent: "Europe",
 
 
 let cityFacts = function(city) {
-    let facts = `${city.name} has a population of ${city.population} and is situated in ${city.continent}`
+    const {name : X, population: Y, continent : Z} = city;
+
+    let facts = `${X} has a population of ${Y} and is situated in ${Z}`
     return facts
 }
 
